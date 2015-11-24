@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <PreferenceCategory android:title="@string/titulo_activity_opcoes" >
+        <CheckBoxPreference
+            android:key="prefAleatoria"
+            android:summary="@string/opcoes_descricao_aleatoria"
+            android:title="@string/opcoes_titulo_aleatoria" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:key="prefResposta"
+            android:summary="@string/opcoes_descricao_resposta"
+            android:title="@string/opcoes_titulo_resposta" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:key="prefRelogio"
+            android:summary="@string/opcoes_descricao_relogio"
+            android:title="@string/opcoes_titulo_relogio" >
+        </CheckBoxPreference>
+        <CheckBoxPreference
+            android:key="prefAutomatico"
+            android:summary="@string/opcoes_descricao_automatico"
+            android:title="@string/opcoes_titulo_automatico" >
+        </CheckBoxPreference>
+        <Preference
+            android:key="prefUsuario"
+            android:summary="@string/opcoes_descricao_usario"
+            android:title="@string/opcoes_titulo_usuario"
+            android:layout="@layout/opcoes_botao"
+        />
+    </PreferenceCategory>
+
+</PreferenceScreen>

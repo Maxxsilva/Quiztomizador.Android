@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" android:layout_height="match_parent"
+    android:layout_width="match_parent">
+        <!-- pressionado -->
+        <item android:drawable="@android:color/holo_blue_bright" android:state_pressed="true"/>
+
+        <!-- focalisado-->
+        <item android:drawable="@android:color/holo_blue_dark" android:state_focused="true"/>
+
+        <!-- normal-->
+        <item android:drawable="@android:color/holo_blue_light"/>
+
+
+    </selector>
+

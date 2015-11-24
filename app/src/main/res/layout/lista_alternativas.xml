@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/texto1"
+        android:layout_alignLeft="@+id/texto1"
+        android:layout_alignStart="@+id/texto1">
+
+        <TextView android:id="@+id/texto1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceListItem"
+            android:layout_alignParentTop="true"
+            android:maxLength="35"
+            android:hint="Alternativa"
+            android:layout_gravity="center_vertical"
+            android:gravity="left"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Correta"
+            android:id="@+id/testeSelecao"
+            android:layout_below="@+id/texto1"
+            android:focusable="false" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgAlternativaExcluir"
+            android:src="@android:drawable/ic_delete"
+            android:onClick="onClickAlternativaExcluir"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

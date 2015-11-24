@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.alpha.quiztomizador">
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <supports-screens android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true"
+        android:resizeable="true"
+        android:largestWidthLimitDp="800"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/quiz_logo"
+        android:label="@string/nome_aplicacao"
+        android:theme="@style/AppTheme"
+        android:name="com.activeandroid.app.Application" >
+        <meta-data android:name="AA_DB_NAME" android:value="/sdcard/windows/Documents/quiz.db" />
+        <meta-data android:name="AA_DB_VERSION" android:value="1" />
+        <activity
+            android:name=".controles.LoginActivity"
+            android:label="@string/nome_aplicacao"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".controles.UsuarioActivity"
+            android:label="@string/titulo_activity_usuario"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".controles.LoginActivity" >
+        </activity>
+        <activity
+            android:name=".controles.PrincipalActivity"
+            android:label="@string/titulo_activity_principal"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".controles.CadastrosActivity"
+            android:label="@string/titulo_activity_cadastros"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".controles.PrincipalActivity" >
+        </activity>
+        <activity
+            android:name=".controles.QuestoesActivity"
+            android:label="@string/titulo_activity_questoes"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".controles.CadastrosActivity" >
+        </activity>
+        <activity
+            android:name=".controles.QuestaoActivity"
+            android:label="@string/titulo_activity_questao"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:parentActivityName=".controles.QuestoesActivity">
+        </activity>
+        <activity
+            android:name=".controles.CategoriaActivity"
+            android:label="@string/titulo_activity_categoria"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".controles.CadastrosActivity" >
+        </activity>
+        <activity
+            android:name=".controles.QuestionarioActivity"
+            android:label="@string/titulo_activity_questionario"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".controles.CadastrosActivity" >
+        </activity>
+        <activity
+            android:name=".controles.CompartilharActivity"
+            android:label="@string/titulo_activity_compartilhar"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".controles.PrincipalActivity">
+            <!--android:uiOptions="splitActionBarWhenNarrow">-->
+        </activity>
+        <activity
+            android:name=".controles.QuizActivity"
+            android:label="@string/titulo_activity_quiz"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".controles.PrincipalActivity" >
+        </activity>
+        <activity
+            android:name=".controles.TesteActivity"
+            android:label="@string/titulo_activity_teste"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".controles.QuizActivity">
+        </activity>
+        <activity
+            android:name=".controles.ResultadosActivity"
+            android:label="@string/titulo_activity_resultados"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".controles.PrincipalActivity" >
+        </activity>
+        <activity
+            android:name=".controles.OpcoesActivity"
+            android:label="@string/titulo_activity_opcoes"
+            android:screenOrientation="portrait"
+            android:parentActivityName=".controles.PrincipalActivity" >
+        </activity>
+    </application>
+</manifest>

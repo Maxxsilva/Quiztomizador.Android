@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- endereço do web service -->
+    <string name="web_service">http://192.168.0.200:8080/Services</string>
+
+</resources>

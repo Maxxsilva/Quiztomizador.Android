@@ -1,0 +1,20 @@
+package com.alpha.quiztomizador;
+
+/**
+ * Created by Usuario on 26/09/2015.
+ */
+public class WS {
+
+    public Usuario autentica(Usuario usuario) {
+        WebService webService = new WebService("http://192.168.0.100:8080/Quiztomizador/login");
+
+        Map<String, String> params = new HashMap<String, String>();
+        params.put("email", usuario.getEmail());
+        params.put("senha", usuario.getSenha());
+        String response = webService.webGet("", params);
+
+        usuario =  new Gson().fromJson(response, getClass()).getUsuario();
+
+        return usuario;
+    }
+}

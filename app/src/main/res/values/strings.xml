@@ -1,0 +1,111 @@
+<resources>
+    <string name="nome_aplicacao">Quiztomizador</string>
+
+    <!-- Principal -->
+    <string name="titulo_activity_principal">Tela Principal</string>
+    <string name="bem_vindo">Bem vindo!</string>
+    <string name="principal_botao_cadastros">Cadastros</string>
+    <string name="principal_botao_compartilhar">Compartilhar</string>
+    <string name="principal_botao_quiz">Quiz</string>
+    <string name="principal_botao_resultados">Resultados</string>
+    <string name="principal_botao_opcoes">Opções</string>
+    <string name="principal_botao_sair">Sair</string>
+    <string name="dialogo_aviso">Aviso</string>
+    <string name="dialogo_sair">Deseja Sair?</string>
+
+    <!-- Login-->
+    <string name="titulo_activity_login">Login</string>
+    <string name="login_campo_email">Email</string>
+    <string name="login_campo_senha">Senha</string>
+    <string name="login_campo_senha_msg">Digite a sua senha</string>
+    <string name="login_botao_logar">LOGAR</string>
+    <string name="login_botao_cadastrar">Cadastrar</string>
+
+    <string name="login_erro_email">O email digitado é inválido</string>
+    <string name="login_erro_senha">A senha deve conter no minimo 6 caracteres</string>
+    <string name="login_erro_incorreto">Erro na autenticação</string>
+    <string name="login_erro_obrigatorio">O campo deve ser prenchido</string>
+    <string name="login_erro_conexao">Ocorreu um erro de conexão!</string>
+
+    <!-- Usuário -->
+    <string name="titulo_activity_usuario">Cadastrar Usuário</string>
+    <string name="usuario_campo_nome">Nome</string>
+    <string name="usuario_campo_email">Email</string>
+    <string name="usuario_campo_senha">Senha</string>
+    <string name="usuario_campo_confirmar">Confirmar Senha</string>
+    <string name="usuario_botao_enviar">Enviar</string>
+
+    <string name="usuario_erro_email">O email digitado é inválido</string>
+    <string name="usuario_erro_senha">A senha deve conter no minimo 6 caracteres</string>
+    <string name="usuario_erro_confirmar">Os campos Senha e Confirmar devem ser iguais</string>
+    <string name="usuario_erro_obrigatorio">O campo deve ser prenchido</string>
+
+    <!-- Cadastros -->
+    <string name="titulo_activity_cadastros">Cadastros</string>
+
+    <!-- Questões -->
+    <string name="titulo_activity_questoes">Questões</string>
+
+    <!-- Questão -->
+    <string name="titulo_activity_questao">Questão</string>
+
+    <!-- Categoria -->
+    <string name="titulo_activity_categoria">Categoria</string>
+    <string name="categoria_campo_nome">Nome da categoria</string>
+    <string name="categoria_campo_descricao">Descrição da categoria</string>
+
+    <string name="categoria_erro_obrigatorio">O campo deve ser prenchido</string>
+
+    <!-- Questionário -->
+    <string name="titulo_activity_questionario">Questionário</string>
+    <string name="questionario_erro_obrigatorio">O campo deve ser prenchido</string>
+
+    <!-- Compartilhar -->
+    <string name="titulo_activity_compartilhar">Compartilhamentos</string>
+
+    <!-- Quiz -->
+    <string name="titulo_activity_quiz">Realizar Teste</string>
+
+    <!-- Teste -->
+    <string name="titulo_activity_teste">Teste</string>
+
+    <!-- Resultados -->
+    <string name="titulo_activity_resultados">Resultado dos Testes</string>
+    <string name="resultados_botao_limpar">Limpar resultados</string>
+    <string name="resultados_botao_voltar">Clique aqui para voltar</string>
+    <string name="resultados_corretas">Corretas:</string>
+    <string name="resultados_erradas">Erradas:</string>
+    <string name="resultados_inicio">Início:</string>
+    <string name="resultados_termino">Término:</string>
+
+    <!-- Opções -->
+    <string name="titulo_activity_opcoes">Opções Gerais</string>
+    <string name="opcoes_titulo_aleatoria">Resposta aleatória</string>
+    <string name="opcoes_descricao_aleatoria">Exibe as alternativas de forma aleatória</string>
+    <string name="opcoes_titulo_resposta">Exibir resposta</string>
+    <string name="opcoes_descricao_resposta">Exibe a resposta correta por questão</string>
+    <string name="opcoes_titulo_relogio">Exibir relógio</string>
+    <string name="opcoes_descricao_relogio">Exibe um relógio com o tempo decorrido</string>
+    <string name="opcoes_titulo_automatico">Login automático</string>
+    <string name="opcoes_descricao_automatico">Logar automaticamente no aplicativo</string>
+    <string name="opcoes_titulo_usuario">Mudar de usuário</string>
+    <string name="opcoes_descricao_usario">Deslogar e logar com outro usuário</string>
+
+    <!-- Vetores do sistema -->
+    <string-array name="abas_vetor">
+        <item>Questionários</item>
+        <item>Categorias</item>
+    </string-array>
+    <string-array name="verdadeiro_falso_vetor">
+        <item>Verdadeiro</item>
+        <item>Falso</item>
+    </string-array>
+    <string-array name="tipo_alternativa_vetor">
+        <item>Objetiva</item>
+        <item>Verdadeiro_Falso</item>
+    </string-array>
+    <string-array name="filtros_vetor">
+        <item>Todos</item>
+        <item>Meus</item>
+    </string-array>
+</resources>

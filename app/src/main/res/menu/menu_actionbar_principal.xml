@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+    <item android:id="@+id/pesquisar"
+        android:icon="@android:drawable/ic_menu_search"
+        android:title="Pesquisar"
+        android:showAsAction="ifRoom|collapseActionView"
+        android:actionViewClass="android.widget.SearchView"
+        android:voiceSearchMode="showVoiceSearchButton|launchRecognizer" />
+    <item android:id="@+id/adicionar"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="Adicionar"
+        android:showAsAction="always"/>
+</menu>
